@@ -48,7 +48,6 @@
     var keys = [_params allKeys];
     for (var i = 0; i < [keys count]; i++)
     {
-        console.log(i);
         if (i != 0)
             body += "&";
         
