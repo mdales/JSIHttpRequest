@@ -5,10 +5,10 @@
 //  Copyright 2011 Digital Flapjack Ltd. All rights reserved.
 //
 
-@import "ASIHTTPRequest.j"
+@import "JSIHTTPRequest.j"
 
 
-@implementation ASIFormDataRequest : JSIHTTPRequest
+@implementation JSIFormDataRequest : JSIHTTPRequest
 {
     var _params;
 }
