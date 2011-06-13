@@ -3,6 +3,10 @@ JSIHTTPRequest
 
 JSIHTTPRequest is a simple Cappuccino implementation of the basic interface for HTTP requests provided by the excellent ASIHTTPRequest by Ben Copsey. It's not nearly as full featured as ASIHTTPRequest, but it allows you to at least start making basic calls that have a similar flow in Cappuccino as you do on iOS/Mac.
 
+To use this you can check out the git repo into your Frameworks directory, and the import the appropriate header. For example:
+
+	@import <JSIHttpRequest/JSIFormDataRequest.j>
+
 Here's an example GET request:
     
     // editing ended, so save back to the server the new message
