@@ -56,7 +56,6 @@
         
         body += escape(key) + "=" + escape(value);        
     }
-    [_request setValue:[body length] forHTTPHeaderField:"Content-Length"]; 
     [_request setHTTPBody: body]; 
     
     [super startAsynchronous]; 
