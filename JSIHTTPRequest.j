@@ -86,6 +86,26 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 //
+- (void)cancel
+{
+	// XXX: todo - work out if this triggers an error, and if not, we should 
+	// spoof one to maintain the same semantics as ASIHTTPRequest.
+	
+	[request cancel];
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)clearDelegatesAndCancel
+{
+	_delegate = nil;
+	[request cancel];
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
 - (void)startAsynchronous
 {    
     _connection = [CPURLConnection connectionWithRequest: _request delegate: self];   
